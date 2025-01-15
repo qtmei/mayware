@@ -22,7 +22,6 @@
 
 					<meta charset="UTF-8">
 					<meta name="viewport" content="width=device-width, initial-scale=1.0">
-					<meta name="title" content="' . $domain . ' - Create user">
 
 					<link rel="icon" href="favicon.ico">
 					<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
@@ -32,7 +31,7 @@
 
 				<body>
 					<header>
-						<img src="favicon-1080x1080.png"/><h1>' . $domain . '</h1>
+						<img src="favicon-1080x1080.png"/>
 
 						<nav>
 							<a href="tickets.php">Tickets</a><a href="team.php">Team</a><a href="settings.php">Settings</a><a href="logout.php">Logout</a>
@@ -50,7 +49,7 @@
 							job title<br>
 							<input type="text" name="title"><br>
 							<br>
-							<input type="submit" value="create">
+							<input type="submit" value="Create">
 						</form>
 					</main>
 

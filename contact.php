@@ -42,7 +42,7 @@
 
 	<body>
 		<header>
-			<img src="favicon-1080x1080.png"/><h1><? echo $domain; ?></h1>
+			<img src="favicon-1080x1080.png"/>
 
 			<nav>
 				<a href="/">Home</a><a href="contact.php">Contact us</a><a href="login.php">Login</a>

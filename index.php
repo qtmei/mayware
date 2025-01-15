@@ -20,7 +20,7 @@
 
 	<body>
 		<header>
-			<img src="favicon-1080x1080.png"/><h1><? echo $domain; ?></h1>
+			<img src="favicon-1080x1080.png"/>
 
 			<nav>
 				<a href="/">Home</a><a href="contact.php">Contact us</a><a href="login.php">Login</a>
@@ -28,7 +28,7 @@
 		</header>
 
 		<main>
-			<h2>We provide you personalized software with excellent optimization and security.</h2>
+			<h1>We provide you personalized software with excellent optimization and security.</h1>
 			<br>
 			Why you should choose us:<br>
 			Lower rates than our competitors<br>

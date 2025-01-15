@@ -25,13 +25,6 @@ header img {
 	display: inline-block;
 }
 
-header h1 {
-	margin-left: 0.5vw;
-	margin-right: 0.5vw;
-	display: inline-block;
-	font-size: 3vh;
-}
-
 header nav {
 	margin-left: 0.5vw;
 	margin-right: 0.5vw;
@@ -41,6 +34,7 @@ header nav {
 header nav a {
 	margin-left: 0.5vw;
 	margin-right: 0.5vw;
+	display: inline-block;
 }
 
 main {
