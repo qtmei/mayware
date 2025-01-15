@@ -8,19 +8,31 @@
 		$ticketInfo = $sta->fetch();
 
 		echo '
-			<html>
+			<!DOCTYPE html>
+			<html lang="en">
 				<head>
-					<title>ticket</title>
-					<link rel="icon" href="core/logo.png">
-					<link rel="stylesheet" href="core/stylesheet.css">
+					<title>Ticket</title>
+
+					<meta charset="UTF-8">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					<meta name="title" content="' . $domain . ' - Ticket">
+
+					<link rel="icon" href="favicon.ico">
+					<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
+					<link rel="icon" type="image/png" href="favicon-1080x1080.png" sizes="1080x1080">
+					<link rel="stylesheet" href="stylesheet.css">
 				</head>
 
-				<header>
-					<img src="core/logo.png" style="width: 6vh; height: 6vh;">' . substr($domain, 1) . '<a href="tickets.php">tickets</a><a href="team.php">team</a><a href="settings.php">settings</a><a href="logout.php">logout</a>
-				</header>
-
 				<body>
-					<div id="content">
+					<header>
+						<img src="favicon-1080x1080.png"/><h1>' . $domain . '</h1>
+
+						<nav>
+							<a href="tickets.php">Tickets</a><a href="team.php">Team</a><a href="settings.php">Settings</a><a href="logout.php">Logout</a>
+						</nav>
+					</header>
+
+					<main>
 						<table>
 							<tr><td>' . $ticketInfo["timestamp"] . ' UTC</td></tr>
 							<tr><td>Company: ' . $ticketInfo["company"] . '</td></tr>
@@ -28,12 +40,12 @@
 							<tr><td>Contact: ' . $ticketInfo["email"] . ' , ' . $ticketInfo["phone"] . '</td></tr>
 							<tr><td>Message: <pre>' . $ticketInfo["message"] . '</pre></td></tr>
 						</table>
-					</div>
-				</body>
+					</main>
 
-				<footer>
-					&copy; ' . date("Y") . ' ' . $domain . '
-				</footer>
+					<footer>
+						&copy; ' . date("Y") . ' ' . $domain . '
+					</footer>
+				</body>
 			</html>
 		';
 	}

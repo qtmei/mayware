@@ -24,22 +24,32 @@
 	}
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>contact us</title>
+		<title>Contact us</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="title" content="<? echo $domain; ?> - Contact us">
 		<meta name="description" content="Contact us for personalized software with excellent optimization and security.">
-		<link rel="icon" href="core/logo.png">
 
-		<link rel="stylesheet" href="core/stylesheet.css">
+		<link rel="icon" href="favicon.ico">
+		<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
+		<link rel="icon" type="image/png" href="favicon-1080x1080.png" sizes="1080x1080">
+		<link rel="stylesheet" href="stylesheet.css">
 	</head>
 
-	<header>
-		<img src="core/logo.png" style="width: 6vh; height: 6vh;"><? echo substr($domain, 1); ?><a href="/">home</a><a href="contact.php">contact us</a><a href="login.php">login</a>
-	</header>
-
 	<body>
-		<div id="content">
+		<header>
+			<img src="favicon-1080x1080.png"/><h1><? echo $domain; ?></h1>
+
+			<nav>
+				<a href="/">Home</a><a href="contact.php">Contact us</a><a href="login.php">Login</a>
+			</nav>
+		</header>
+
+		<main>
 			For consultation, quotes, or help, please fill out the form below.
 			<br>
 			<form method="POST">
@@ -56,12 +66,12 @@
 				message<br>
 				<textarea id="message" name="message" maxlength="2048" wrap="soft" required></textarea><br>
 				<br>
-				<input type="submit" value="submit">
+				<input type="submit" value="Submit">
 			</form>
-		</div>
-	</body>
+		</main>
 
-	<footer>
-		&copy; <? echo date("Y") . " " . $domain; ?>
-	</footer>
+		<footer>
+			&copy; <? echo date("Y") . " " . $domain; ?>
+		</footer>
+	</body>
 </html>

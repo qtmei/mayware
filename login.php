@@ -30,31 +30,43 @@
 	}
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>login</title>
-		<link rel="icon" href="core/logo.png">
-		<link rel="stylesheet" href="core/stylesheet.css">
+		<title>Login</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="title" content="<? echo $domain; ?> - Login">
+
+		<link rel="icon" href="favicon.ico">
+		<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
+		<link rel="icon" type="image/png" href="favicon-1080x1080.png" sizes="1080x1080">
+		<link rel="stylesheet" href="stylesheet.css">
 	</head>
 
-	<header>
-		<img src="core/logo.png" style="width: 6vh; height: 6vh;"><? echo substr($domain, 1); ?><a href="/">home</a><a href="contact.php">contact us</a><a href="login.php">login</a>
-	</header>
-
 	<body>
-		<div id="content">
+		<header>
+			<img src="favicon-1080x1080.png"/><h1><? echo $domain; ?></h1>
+
+			<nav>
+				<a href="/">Home</a><a href="contact.php">Contact us</a><a href="login.php">Login</a>
+			</nav>
+		</header>
+
+		<main>
 			<form method="POST">
 				username<br>
 				<input type="text" name="username" maxlength="16" required><br>
 				password<br>
 				<input type="password" name="password" maxlength="256" required><br>
 				<br>
-				<input type="submit" value="login">
+				<input type="submit" value="Login">
 			</form>
-		</div>
-	</body>
+		</main>
 
-	<footer>
-		&copy; <? echo date("Y") . " " . $domain; ?>
-	</footer>
+		<footer>
+			&copy; <? echo date("Y") . " " . $domain; ?>
+		</footer>
+	</body>
 </html>
