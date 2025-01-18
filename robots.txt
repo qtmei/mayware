@@ -8,4 +8,4 @@ User-agent: Googlebot-Image
 Disallow:
 
 Sitemap: https://mayware.net/sitemap.txt
-Sitemap: https://meiware.net/sitemap.txt
+Sitemap: https://www.mayware.net/sitemap.txt

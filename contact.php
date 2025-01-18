@@ -27,22 +27,41 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Contact us</title>
+		<title>Mayware - Contact us</title>
+
+		<meta name="title" content="Mayware - Contact us">
+		<meta name="description" content="Contact us for personalized software with excellent optimization and security.">
+		<meta name="keywords" content="mayware, mayware.net, software, software consult, software consulting, software consultation, affordable software consult, affordable software consulting, affordable software consultation">
+
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://mayware.net/contact.php">
+		<meta property="og:title" content="Mayware - Contact us">
+		<meta property="og:description" content="Contact us for personalized software with excellent optimization and security.">
+		<meta property="og:image" content="https://mayware.net/favicon-1080x1080.png">
+
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://mayware.net/contact.php">
+		<meta property="twitter:title" content="Mayware - Contact us">
+		<meta property="twitter:description" content="Contact us for personalized software with excellent optimization and security.">
+		<meta property="twitter:image" content="https://mayware.net/favicon-1080x1080.png">
 
 		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="title" content="<? echo $domain; ?> - Contact us">
-		<meta name="description" content="Contact us for personalized software with excellent optimization and security.">
+		<meta name="robots" content="index, follow">
+		<meta name="language" content="English">
 
 		<link rel="icon" href="favicon.ico">
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 		<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
 		<link rel="icon" type="image/png" href="favicon-1080x1080.png" sizes="1080x1080">
+
 		<link rel="stylesheet" href="stylesheet.css">
 	</head>
 
 	<body>
 		<header>
-			<img src="favicon-1080x1080.png"/>
+			<img src="favicon-1080x1080.png">
 
 			<nav>
 				<a href="/">Home</a><a href="contact.php">Contact us</a><a href="login.php">Login</a>
@@ -50,20 +69,20 @@
 		</header>
 
 		<main>
-			For consultation, quotes, or help, please fill out the form below.
+			For consulting, quotes, or help, please fill out the form below.
 			<br>
 			<form method="POST">
-				company<br>
+				Company<br>
 				<input type="text" name="company" maxlength="32" required><br>
-				job title<br>
+				Job title<br>
 				<input type="text" name="job" maxlength="32" required><br>
-				full name<br>
+				Full name<br>
 				<input type="text" name="name" maxlength="32" required><br>
-				email address<br>
+				Email address<br>
 				<input type="text" name="email" maxlength="64" required><br>
-				phone number<br>
+				Phone number<br>
 				<input type="text" name="phone" maxlength="16" required><br>
-				message<br>
+				Message<br>
 				<textarea id="message" name="message" maxlength="2048" wrap="soft" required></textarea><br>
 				<br>
 				<input type="submit" value="Submit">
@@ -71,7 +90,7 @@
 		</main>
 
 		<footer>
-			&copy; <? echo date("Y") . " " . $domain; ?>
+			&copy; <? echo date("Y") ?> Mayware
 		</footer>
 	</body>
 </html>
