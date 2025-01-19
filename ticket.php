@@ -28,7 +28,7 @@
 
 				<body>
 					<header>
-						<img src="favicon-1080x1080.png"/><h1>Mayware<br/>Software Consulting</h1>
+						<img src="favicon-1080x1080.png"/><h1>' . $domain . '<br/>Software Consulting</h1>
 					</header>
 
 					<nav>
@@ -46,7 +46,7 @@
 					</main>
 
 					<footer>
-						&copy; ' . date("Y") . ' Mayware
+						&copy; ' . date("Y") . ' ' . $domain . '
 					</footer>
 				</body>
 			</html>

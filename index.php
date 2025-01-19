@@ -5,23 +5,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Mayware - Software Consulting</title>
+		<title><? echo $domain; ?> - Software Consulting</title>
 
-		<meta name="title" content="Mayware - Software Consulting"/>
+		<meta name="title" content="<? echo $domain; ?> - Software Consulting"/>
 		<meta name="description" content="We provide you personalized software with excellent optimization and security."/>
-		<meta name="keywords" content="mayware, mayware.net, software, software consult, software consulting, software consultation, affordable software consult, affordable software consulting, affordable software consultation"/>
+		<meta name="keywords" content="mayware, meiware, mayware.net, meiware.net, software, software consult, software consulting, software consultation, affordable software consult, affordable software consulting, affordable software consultation"/>
 
 		<meta property="og:type" content="website"/>
-		<meta property="og:url" content="https://mayware.net/"/>
-		<meta property="og:title" content="Mayware - Software Consulting"/>
+		<meta property="og:url" content="https://<? echo $domain2; ?>.net/"/>
+		<meta property="og:title" content="<? echo $domain; ?> - Software Consulting"/>
 		<meta property="og:description" content="We provide you personalized software with excellent optimization and security."/>
-		<meta property="og:image" content="https://mayware.net/favicon-1080x1080.png"/>
+		<meta property="og:image" content="https://<? echo $domain2; ?>.net/favicon-1080x1080.png"/>
 
 		<meta property="twitter:card" content="summary_large_image"/>
-		<meta property="twitter:url" content="https://mayware.net/"/>
-		<meta property="twitter:title" content="Mayware - Software Consulting"/>
+		<meta property="twitter:url" content="https://<? echo $domain2; ?>.net/"/>
+		<meta property="twitter:title" content="<? echo $domain; ?> - Software Consulting"/>
 		<meta property="twitter:description" content="We provide you personalized software with excellent optimization and security."/>
-		<meta property="twitter:image" content="https://mayware.net/favicon-1080x1080.png"/>
+		<meta property="twitter:image" content="https://<? echo $domain2; ?>.net/favicon-1080x1080.png"/>
 
 		<meta charset="UTF-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -39,7 +39,7 @@
 
 	<body>
 		<header>
-			<img src="favicon-1080x1080.png"/><h1>Mayware<br/>Software Consulting</h1>
+			<img src="favicon-1080x1080.png"/><h1><? echo $domain; ?><br/>Software Consulting</h1>
 		</header>
 
 		<nav>
@@ -58,7 +58,7 @@
 		</main>
 
 		<footer>
-			&copy; <? echo date("Y"); ?> Mayware
+			&copy; <? echo date("Y") . " " . $domain; ?>
 		</footer>
 	</body>
 </html>
