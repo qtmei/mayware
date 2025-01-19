@@ -9,7 +9,7 @@
 
 		while($row = $sta->fetch())
 		{
-			$html .= '<tr><td><a href="profile.php?id=' . $row["id"] . '">' . $row["name"] . '</a></td></tr>';
+			$html .= '<tr><td><a href="profile.php?id=' . $row["id"] . '">' . $row["name"] . '</a></td></tr>' . "\n\t\t\t\t\t\t\t";
 		}
 
 		echo '
