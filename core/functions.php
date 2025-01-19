@@ -11,6 +11,9 @@
 	</config>
 	*/
 
+	$domain = $_SERVER["SERVER_NAME"] == "mayware.net" ? "Mayware" : "Meiware";
+	$domain2 = $_SERVER["SERVER_NAME"] == "mayware.net" ? "mayware" : "meiware";
+
 	session_start();
 
 	$con = new PDO("mysql:host=$DBhost;port=$DBport;dbname=$DB;charset=utf8", "$DBuser", "$DBpass");
