@@ -61,11 +61,12 @@
 
 					<main>
 						<form method="POST">
-							New password<br/>
-							<input type="password" name="new_password" maxlength="256"/><br/>
-							Confirm password<br/>
-							<input type="password" name="confirm_password" maxlength="256"/><br/>
-							<br/>
+							New password
+							<input type="password" name="new_password" maxlength="256"/>
+
+							Confirm password
+							<input type="password" name="confirm_password" maxlength="256"/>
+
 							<input type="submit" value="Update"/>
 						</form>
 					</main>

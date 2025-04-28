@@ -9,7 +9,7 @@
 
 		while($row = $sta->fetch())
 		{
-			$html .= '<tr><td><a href="ticket.php?id=' . $row["id"] . '">' . $row["timestamp"] . ' UTC, ' . $row["company"] . ', ' . $row["job"] . ', ' . $row["name"] . '</a></td></tr>' . "\n\t\t\t\t\t\t\t";
+			$html .= "<tr><td>" . $row["ts"] . " UTC</td><td>" . $row["company"] . "</td><td>" . $row["job"] . "</td><td>" . $row["name"] . '</td><td><a href="ticket.php?id=' . $row["id"] . '">View</a></td></tr>';
 		}
 
 		echo '
@@ -42,6 +42,13 @@
 
 					<main>
 						<table>
+							<tr>
+								<th>Timestamp</th>
+								<th>Company</th>
+								<th>Job Title</th>
+								<th>Representative</th>
+								<th></th>
+							</tr>
 							' . $html . '
 						</table>
 					</main>

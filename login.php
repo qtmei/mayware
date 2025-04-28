@@ -76,11 +76,12 @@
 
 		<main>
 			<form method="POST">
-				Username<br/>
-				<input type="text" name="username" maxlength="16" required/><br/>
-				Password<br/>
-				<input type="password" name="password" maxlength="256" required/><br/>
-				<br/>
+				Username
+				<input type="text" name="username" maxlength="16" required/>
+
+				Password
+				<input type="password" name="password" maxlength="256" required/>
+
 				<input type="submit" value="Login"/>
 			</form>
 		</main>

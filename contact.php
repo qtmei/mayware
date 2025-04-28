@@ -72,19 +72,24 @@
 			For consulting, quotes, or help, please fill out the form below.
 			<br/>
 			<form method="POST">
-				Company<br/>
-				<input type="text" name="company" maxlength="32" required/><br/>
-				Job title<br/>
-				<input type="text" name="job" maxlength="32" required/><br/>
-				Full name<br/>
-				<input type="text" name="name" maxlength="32" required/><br/>
-				Email address<br/>
-				<input type="text" name="email" maxlength="64" required/><br/>
-				Phone number<br/>
-				<input type="text" name="phone" maxlength="16" required/><br/>
-				Message<br/>
-				<textarea id="message" name="message" maxlength="2048" wrap="soft" required></textarea><br/>
-				<br/>
+				Company
+				<input type="text" name="company" maxlength="32" required/>
+
+				Job title
+				<input type="text" name="job" maxlength="32" required/>
+
+				Full name
+				<input type="text" name="name" maxlength="32" required/>
+
+				Email address
+				<input type="text" name="email" maxlength="64" required/>
+
+				Phone number
+				<input type="text" name="phone" maxlength="16" required/>
+
+				Message
+				<textarea id="message" name="message" maxlength="2048" wrap="soft" required></textarea>
+
 				<input type="submit" value="Submit"/>
 			</form>
 		</main>

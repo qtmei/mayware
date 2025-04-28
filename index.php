@@ -48,12 +48,12 @@
 
 		<main>
 			<h1>We provide you personalized software with excellent optimization and security.</h1>
-			<br/>
+
 			Why you should choose us:<br/>
 			Lower rates than our competitors<br/>
 			Higher standards for optimization and security<br/>
 			24/7 Customer Support<br/>
-			<br/>
+
 			<i>For consulting, quotes, or help, please visit our <a href="contact.php">Contact</a> page.</i>
 		</main>
 
