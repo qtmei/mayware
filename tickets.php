@@ -49,7 +49,7 @@
 							<th>Company</th>
 							<th>Job Title</th>
 							<th>Representative</th>
-							<th></th>
+							<th>Actions</th>
 						</tr>
 						' . $html . '
 					</table>

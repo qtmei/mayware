@@ -43,11 +43,25 @@
 
 				<main>
 					<table>
-						<tr><td><img src="' . $avatarURL . '" style="width: 16vh; height: 16vh; object-fit: cover;"></td></tr>
-						<tr><td>' . $accountInfo["name"] . '</td></tr>
-						<tr><td>' . $accountInfo["title"] . '</tr></td>
-						<tr><td>' . $accountInfo["ts"] . ' UTC</td></tr>
-						<tr><td><a href="mailto:' . $accountInfo["username"] . '@mayware.net">' . $accountInfo["username"] . '@mayware.net</a></td></tr>
+						<tr>
+							<td><img src="' . $avatarURL . '" style="width: 16vh; height: 16vh; object-fit: cover;"></td>
+						</tr>
+
+						<tr>
+							<td>' . $accountInfo["name"] . '</td>
+						</tr>
+
+						<tr>
+							<td>' . $accountInfo["title"] . '</tr>
+						</td>
+
+						<tr>
+							<td>' . $accountInfo["ts"] . ' UTC</td>
+						</tr>
+
+						<tr>
+							<td><a href="mailto:' . $accountInfo["username"] . '@mayware.net">' . $accountInfo["username"] . '@mayware.net</a></td>
+						</tr>
 					</table>
 				</main>
 

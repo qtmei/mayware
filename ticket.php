@@ -11,6 +11,15 @@
 	$sta->execute(array(':id' => $_GET["id"]));
 	$ticketInfo = $sta->fetch();
 
+	if(isset($_GET["close"]))
+	{
+		$sta = $con->prepare("DELETE FROM tickets WHERE id=:id");
+		$sta->execute(array(':id' => $_GET["id"]));
+
+		header("Location: http://" . $_SERVER["HTTP_HOST"] . "/tickets.php");
+		exit();
+	}
+
 	echo '
 		<!DOCTYPE html>
 		<html lang="en">
@@ -41,10 +50,20 @@
 
 				<main>
 					<table>
-						<tr><td>' . $ticketInfo["ts"] . ' UTC</td></tr>
-						<tr><td>Company: ' . $ticketInfo["company"] . '</td></tr>
-						<tr><td>Representative: ' . $ticketInfo["job"] . ', ' . $ticketInfo["name"] . '</td></tr>
-						<tr><td>Contact: <a href="mailto:' . $ticketInfo["email"] . '">' . $ticketInfo["email"] . '</a>, <a href="tel:' . $ticketInfo["phone"] . '">' . $ticketInfo["phone"] . '</a></td></tr>
+						<tr>
+							<td>' . $ticketInfo["ts"] . ' UTC</td>
+							<td>Company: ' . $ticketInfo["company"] . '</td>
+						</tr>
+
+						<tr>
+							<td>Actions: <a href="ticket.php?id=' . $ticketInfo["id"] . '&close">Close</a></td>
+							<td>Representative: ' . $ticketInfo["job"] . ', ' . $ticketInfo["name"] . '</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>Contact: <a href="mailto:' . $ticketInfo["email"] . '">' . $ticketInfo["email"] . '</a>, <a href="tel:' . $ticketInfo["phone"] . '">' . $ticketInfo["phone"] . '</a></td>
+						</tr>
 					</table>
 
 					<article>
