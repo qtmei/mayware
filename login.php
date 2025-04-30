@@ -46,6 +46,8 @@
 			software engineering lafayette, software consult lafayette, software consulting lafayette, software consultation lafayette, 
 			web design lafayette, web designer lafayette, web design consult lafayette, web design consulting lafayette, web design consultation lafayette
 		"/>
+		<meta name="geo.region" content="US-LA"/>
+  		<meta name="geo.placename" content="Lafayette"/>
 
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="https://<? echo $domain2; ?>.net/login.php"/>
@@ -95,7 +97,7 @@
 		</main>
 
 		<footer>
-			&copy; <? echo date("Y") . " " . $domain; ?>
+			&copy; 2021 <? echo $domain; ?>
 		</footer>
 	</body>
 </html>

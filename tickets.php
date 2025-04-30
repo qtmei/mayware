@@ -56,7 +56,7 @@
 				</main>
 
 				<footer>
-					&copy; ' . date("Y") . ' ' . $domain . '
+					&copy; 2021 ' . $domain . '
 				</footer>
 			</body>
 		</html>
