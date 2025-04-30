@@ -7,19 +7,23 @@
 		$job = htmlspecialchars(substr($_POST["job"], 0, 32));
 		$name = htmlspecialchars(substr($_POST["name"], 0, 32));
 		$email = htmlspecialchars(substr($_POST["email"], 0, 64));
-		$phone = htmlspecialchars(substr($_POST["phone"], 0, 16));
+		$phone = htmlspecialchars(substr($_POST["phone"], 0, 15));
 		$message = htmlspecialchars(substr($_POST["message"], 0, 2048));
 
-		if($name != "" && $company != "" && $job != "" && $email != "" && $phone != "" && $message != "")
+		if($name == "" || $company == "" || $job == "" || $email == "" || $phone == "" || $message == "")
+			echo '<script>alert("Your request has missing details and was not submitted.");</script>';
+		else if(!str_contains($name, ' '))
+			echo '<script>alert("Please use your full name.");</script>';
+		else if(!str_contains($email, '@') || !str_contains($email, '.'))
+			echo '<script>alert("Invalid email address.");</script>';
+		else if(!is_numeric($phone))
+			echo '<script>alert("Invalid phone number.");</script>';
+		else
 		{
 			$sta = $con->prepare("INSERT INTO tickets (company, job, name, email, phone, message) VALUES (:company, :job, :name, :email, :phone, :message)");
 			$sta->execute(array(':company' => $company, ':job' => $job, ':name' => $name, ':email' => $email, ':phone' => $phone, ':message' => $message));
 
-			echo "Request submitted. We will be in touch in 1-2 business days.";
-		}
-		else
-		{
-			echo "Your request has missing details and was not submitted.";
+			echo '<script>alert("Request submitted. We will be in touch in 1-2 business days.");</script>';
 		}
 	}
 ?>
@@ -82,10 +86,10 @@
 				<input type="text" name="name" maxlength="32" required/>
 
 				Email address
-				<input type="text" name="email" maxlength="64" required/>
+				<input type="email" name="email" maxlength="64" required/>
 
 				Phone number
-				<input type="text" name="phone" maxlength="16" required/>
+				<input type="tel" name="phone" maxlength="15" placeholder="0123456789" required/>
 
 				Message
 				<textarea id="message" name="message" maxlength="2048" wrap="soft" required></textarea>

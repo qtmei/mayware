@@ -24,9 +24,7 @@
 			exit();
 		}
 		else
-		{
-			echo "Wrong password.";
-		}
+			echo '<script>alert("Wrong password.");</script>';
 	}
 ?>
 

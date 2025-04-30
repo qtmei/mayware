@@ -8,9 +8,7 @@
 		$html = "";
 
 		while($row = $sta->fetch())
-		{
-			$html .= "<tr><td>" . $row["ts"] . " UTC</td><td>" . $row["company"] . "</td><td>" . $row["job"] . "</td><td>" . $row["name"] . '</td><td><a href="ticket.php?id=' . $row["id"] . '">View</a></td></tr>';
-		}
+			$html .= '<tr><td>' . $row["ts"] . ' UTC</td><td>' . $row["company"] . '</td><td>' . $row["job"] . '</td><td>' . $row["name"] . '</td><td><a href="ticket.php?id=' . $row["id"] . '">View</a></td></tr>';
 
 		echo '
 			<!DOCTYPE html>

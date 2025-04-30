@@ -23,12 +23,10 @@
 
 				$_SESSION["password"] = $fetchedPassword;
 
-				echo "Password changed.";
+				echo '<script>alert("Password changed.");</script>';
 			}
 			else
-			{
-				echo "Passwords do not match or invalid password. Minimum requirements: 8 characters, 4 unique.";
-			}
+				echo '<script>alert("Passwords do not match or invalid password. Minimum requirements: 8 characters, 4 unique.");</script>';
 		}
 
 		echo '
