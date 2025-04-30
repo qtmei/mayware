@@ -31,9 +31,7 @@
 			$password = $sta->fetch()["password"];
 
 			if($_SESSION["password"] == $password)
-			{
 				$loggedin = true;
-			}
 			else
 			{
 				session_unset();
