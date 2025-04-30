@@ -74,7 +74,7 @@
 
 		<main>
 			For consulting, quotes, or help, please fill out the form below.
-			<br/>
+
 			<form method="POST">
 				Company
 				<input type="text" name="company" maxlength="32" required/>
