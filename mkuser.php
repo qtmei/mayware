@@ -16,6 +16,12 @@
 
 		$sta = $con->prepare("INSERT INTO accounts (username, password, name, title) VALUES (:username, :password, :name, :title)");
 		$sta->execute(array(':username' => $username, ':password' => password_hash($password, PASSWORD_DEFAULT), ':name' => $name, ':title' => $title));
+
+		$sta = $con->prepare("SELECT * FROM accounts WHERE username=:username");
+		$sta->execute(array(':username' => $username));
+		$accountInfo = $sta->fetch();
+
+		move_uploaded_file($_FILES["photo"]["tmp_name"], "photos/" . $accountInfo["id"] . ".png");
 	}
 
 	echo '
@@ -47,16 +53,22 @@
 				</nav>
 
 				<main>
-					<form method="POST">
-						Username<br/>
-						<input type="text" name="username"/><br/>
-						Password<br/>
-						<input type="password" name="password"/><br/>
-						Full name<br/>
-						<input type="text" name="name"/><br/>
-						Job title<br/>
-						<input type="text" name="title"/><br/>
-						<br/>
+					<form method="POST" enctype="multipart/form-data">
+						Username
+						<input type="text" name="username"/>
+
+						Password
+						<input type="password" name="password"/>
+
+						Full name
+						<input type="text" name="name"/>
+
+						Job title
+						<input type="text" name="title"/>
+
+						Photo
+						<input type="file" name="photo" accept="image/png"/>
+
 						<input type="submit" value="Create"/>
 					</form>
 				</main>

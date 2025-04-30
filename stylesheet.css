@@ -116,6 +116,12 @@ td a {
 	display: inline-block;
 }
 
+td img {
+	width: 16vh;
+	height: 16vh;
+	object-fit: cover;
+}
+
 input {
 	margin: 0 auto 1vh auto;
 	display: block;
