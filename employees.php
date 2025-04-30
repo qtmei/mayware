@@ -6,23 +6,19 @@
 		header("Location: http://" . $_SERVER["HTTP_HOST"] . "/login.php");
 		exit();
 	}
+	
+	$sta = $con->prepare("SELECT * FROM accounts");
+	$sta->execute();
+	$html = "";
 
-	if($_POST && $_SESSION["id"] == 1)
-	{
-		$username = $_POST["username"];
-		$password = $_POST["password"];
-		$name = $_POST["name"];
-		$title = $_POST["title"];
-
-		$sta = $con->prepare("INSERT INTO accounts (username, password, name, title) VALUES (:username, :password, :name, :title)");
-		$sta->execute(array(':username' => $username, ':password' => password_hash($password, PASSWORD_DEFAULT), ':name' => $name, ':title' => $title));
-	}
+	while($row = $sta->fetch())
+		$html .= '<tr><td><a href="employee.php?id=' . $row["id"] . '">' . $row["name"] . '</a></td></tr>';
 
 	echo '
 		<!DOCTYPE html>
 		<html lang="en">
 			<head>
-				<title>Create user</title>
+				<title>Team</title>
 
 				<meta charset="UTF-8"/>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -47,18 +43,9 @@
 				</nav>
 
 				<main>
-					<form method="POST">
-						Username<br/>
-						<input type="text" name="username"/><br/>
-						Password<br/>
-						<input type="password" name="password"/><br/>
-						Full name<br/>
-						<input type="text" name="name"/><br/>
-						Job title<br/>
-						<input type="text" name="title"/><br/>
-						<br/>
-						<input type="submit" value="Create"/>
-					</form>
+					<table>
+						' . $html . '
+					</table>
 				</main>
 
 				<footer>

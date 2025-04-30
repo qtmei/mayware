@@ -7,22 +7,17 @@
 		exit();
 	}
 
-	if($_POST && $_SESSION["id"] == 1)
-	{
-		$username = $_POST["username"];
-		$password = $_POST["password"];
-		$name = $_POST["name"];
-		$title = $_POST["title"];
+	$sta = $con->prepare("SELECT * FROM accounts WHERE id=:id");
+	$sta->execute(array(':id' => $_GET["id"]));
+	$accountInfo = $sta->fetch();
 
-		$sta = $con->prepare("INSERT INTO accounts (username, password, name, title) VALUES (:username, :password, :name, :title)");
-		$sta->execute(array(':username' => $username, ':password' => password_hash($password, PASSWORD_DEFAULT), ':name' => $name, ':title' => $title));
-	}
+	$avatarURL = file_exists("photos/" . $accountInfo["username"] . ".png") ? "photos/" . $accountInfo["username"] . ".png" : "favicon-1080x1080.png";
 
 	echo '
 		<!DOCTYPE html>
 		<html lang="en">
 			<head>
-				<title>Create user</title>
+				<title>Profile</title>
 
 				<meta charset="UTF-8"/>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -47,18 +42,27 @@
 				</nav>
 
 				<main>
-					<form method="POST">
-						Username<br/>
-						<input type="text" name="username"/><br/>
-						Password<br/>
-						<input type="password" name="password"/><br/>
-						Full name<br/>
-						<input type="text" name="name"/><br/>
-						Job title<br/>
-						<input type="text" name="title"/><br/>
-						<br/>
-						<input type="submit" value="Create"/>
-					</form>
+					<table>
+						<tr>
+							<td><img src="' . $avatarURL . '" style="width: 16vh; height: 16vh; object-fit: cover;"></td>
+						</tr>
+
+						<tr>
+							<td>' . $accountInfo["name"] . '</td>
+						</tr>
+
+						<tr>
+							<td>' . $accountInfo["title"] . '</tr>
+						</td>
+
+						<tr>
+							<td>' . $accountInfo["ts"] . ' UTC</td>
+						</tr>
+
+						<tr>
+							<td><a href="mailto:' . $accountInfo["username"] . '@mayware.net">' . $accountInfo["username"] . '@mayware.net</a></td>
+						</tr>
+					</table>
 				</main>
 
 				<footer>

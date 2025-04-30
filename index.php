@@ -65,9 +65,9 @@
 			Lower rates than our competitors<br/>
 			Higher standards for optimization and security<br/>
 			24/7 Customer Support<br/>
-			Supports small businesses<br/>
+			Supports small businesses<br/><br/>
 
-			Headquartered in Lafayette, Louisiana.
+			Headquartered in Lafayette, Louisiana.<br/><br/>
 
 			<i>For consulting, quotes, or help, please visit our <a href="contact.php">Contact</a> page.</i>
 		</main>
