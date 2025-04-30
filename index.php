@@ -51,7 +51,7 @@
 
 	<body>
 		<header>
-			<img src="favicon-1080x1080.png"/><h1><? echo $domain; ?><br/>Software Consulting</h1>
+			<img src="favicon-1080x1080.png" alt=""/><h1><? echo $domain; ?><br/>Software Consulting</h1>
 		</header>
 
 		<nav>
@@ -59,7 +59,7 @@
 		</nav>
 
 		<main>
-			<h1>We provide you personalized software and web design with excellent optimization and security.</h1>
+			<h2>We provide you personalized software and web design with excellent optimization and security.</h2>
 
 			Why you should choose us:<br/>
 			Lower rates than our competitors<br/>

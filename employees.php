@@ -35,7 +35,7 @@
 
 			<body>
 				<header>
-					<img src="favicon-1080x1080.png"/><h1>' . $domain . '<br/>Software Consulting</h1>
+					<img src="favicon-1080x1080.png" alt=""/><h1>' . $domain . '<br/>Software Consulting</h1>
 				</header>
 
 				<nav>
