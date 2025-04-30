@@ -8,19 +8,29 @@
 		<title><? echo $domain; ?> - Software Consulting</title>
 
 		<meta name="title" content="<? echo $domain; ?> - Software Consulting"/>
-		<meta name="description" content="We provide you personalized software with excellent optimization and security."/>
-		<meta name="keywords" content="mayware, meiware, mayware.net, meiware.net, software, software consult, software consulting, software consultation, affordable software consult, affordable software consulting, affordable software consultation"/>
+		<meta name="description" content="We provide you personalized software and web design with excellent optimization and security."/>
+		<meta name="keywords" content="
+			mayware, meiware, mayware.net, meiware.net, mayware lafayette, meiware lafayette, 
+			software engineering, software consult, software consulting, software consultation, 
+			web design, web designer, web design consult, web design consulting, web design consultation, 
+			affordable software engineering, affordable software consult, affordable software consulting, affordable software consultation, 
+			affordable web design, affordable web designer, affordable web design consult, affordable web design consulting, affordable web design consultation, 
+			lafayette software engineering, lafayette software consult, lafayette software consulting, lafayette software consultation, 
+			lafayette web design, lafayette web designer, lafayette web design consult, lafayette web design consulting, lafayette web design consultation, 
+			software engineering lafayette, software consult lafayette, software consulting lafayette, software consultation lafayette, 
+			web design lafayette, web designer lafayette, web design consult lafayette, web design consulting lafayette, web design consultation lafayette
+		"/>
 
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="https://<? echo $domain2; ?>.net/"/>
 		<meta property="og:title" content="<? echo $domain; ?> - Software Consulting"/>
-		<meta property="og:description" content="We provide you personalized software with excellent optimization and security."/>
+		<meta property="og:description" content="We provide you personalized software and web design with excellent optimization and security."/>
 		<meta property="og:image" content="https://<? echo $domain2; ?>.net/favicon-1080x1080.png"/>
 
 		<meta property="twitter:card" content="summary_large_image"/>
 		<meta property="twitter:url" content="https://<? echo $domain2; ?>.net/"/>
 		<meta property="twitter:title" content="<? echo $domain; ?> - Software Consulting"/>
-		<meta property="twitter:description" content="We provide you personalized software with excellent optimization and security."/>
+		<meta property="twitter:description" content="We provide you personalized software and web design with excellent optimization and security."/>
 		<meta property="twitter:image" content="https://<? echo $domain2; ?>.net/favicon-1080x1080.png"/>
 
 		<meta charset="UTF-8">
@@ -47,12 +57,15 @@
 		</nav>
 
 		<main>
-			<h1>We provide you personalized software with excellent optimization and security.</h1>
+			<h1>We provide you personalized software and web design with excellent optimization and security.</h1>
 
 			Why you should choose us:<br/>
 			Lower rates than our competitors<br/>
 			Higher standards for optimization and security<br/>
 			24/7 Customer Support<br/>
+			Supports small businesses<br/>
+
+			Headquartered in Lafayette, Louisiana.
 
 			<i>For consulting, quotes, or help, please visit our <a href="contact.php">Contact</a> page.</i>
 		</main>
