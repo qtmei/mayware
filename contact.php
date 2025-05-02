@@ -85,28 +85,24 @@
 		</nav>
 
 		<main>
-			For consulting, quotes, or help, please fill out the form below.
-
 			<form method="POST">
-				Company
-				<input type="text" name="company" maxlength="32" required/>
+				<fieldset>
+					<legend>To contact us please fill out the form below</legend>
 
-				Job title
-				<input type="text" name="job" maxlength="32" required/>
+					<label for="company">Company</label><input type="text" id="company" name="company" maxlength="32" required/>
 
-				Full name
-				<input type="text" name="name" maxlength="32" required/>
+					<label for="job">Job title</label><input type="text" id="job" name="job" maxlength="32" required/>
 
-				Email address
-				<input type="email" name="email" maxlength="64" required/>
+					<label for="name">Full name</label><input type="text" id="name" name="name" maxlength="32" required/>
 
-				Phone number
-				<input type="tel" name="phone" maxlength="15" placeholder="0123456789" required/>
+					<label for="email">Email address</label><input type="email" id="email" name="email" maxlength="64" required/>
 
-				Message
-				<textarea id="message" name="message" maxlength="2048" wrap="soft" required></textarea>
+					<label for="phone">Phone number</label><input type="tel" id="phone" name="phone" maxlength="15" placeholder="0123456789" required/>
 
-				<input type="submit" value="Submit"/>
+					<label for="message">Message</label><textarea id="message" id="message" name="message" maxlength="2048" wrap="soft" required></textarea>
+
+					<input type="submit" value="Submit"/>
+				</fieldset>
 			</form>
 		</main>
 

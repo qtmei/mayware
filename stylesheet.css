@@ -49,7 +49,7 @@ nav a {
 
 main {
 	position: fixed;
-	top: calc((0.75vh * 3) + 1vh + 8vh + 1em);
+	margin-top: calc((0.75vh * 3) + 1vh + 8vh + 1em);
 	width: 100%;
 	max-height: calc(100vh - (0.75vh * 5) - 1vh - 8vh - 2em);
 	background-color: #303030;
@@ -120,6 +120,14 @@ td img {
 	width: 16vh;
 	height: 16vh;
 	object-fit: cover;
+}
+
+form {
+	margin: 0 auto 0 auto;
+}
+
+fieldset {
+	display: inline-block;
 }
 
 input {

@@ -54,22 +54,21 @@
 
 				<main>
 					<form method="POST" enctype="multipart/form-data">
-						Username
-						<input type="text" name="username"/>
+						<fieldset>
+							<legend>Create user</legend>
 
-						Password
-						<input type="password" name="password"/>
+							<label for="username">Username</label><input type="text" id="username" name="username"/>
 
-						Full name
-						<input type="text" name="name"/>
+							<label for="password">Password</label><input type="password" id="password" name="password"/>
 
-						Job title
-						<input type="text" name="title"/>
+							<label for="name">Full name</label><input type="text" id="name" name="name"/>
 
-						Photo
-						<input type="file" name="photo" accept="image/png"/>
+							<label for="title">Job title</label><input type="text" id="title" name="title"/>
 
-						<input type="submit" value="Create"/>
+							<label for="photo">Photo</label><input type="file" id="photo" name="photo" accept="image/png"/>
+
+							<input type="submit" value="Create"/>
+						</fieldset>
 					</form>
 				</main>
 

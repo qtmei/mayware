@@ -63,13 +63,15 @@
 
 				<main>
 					<form method="POST">
-						New password
-						<input type="password" name="new_password" maxlength="256"/>
+						<fieldset>
+							<legend>Account settings</legend>
 
-						Confirm password
-						<input type="password" name="confirm_password" maxlength="256"/>
+							<label for="new_password">New password</label><input type="password" id="new_password" name="new_password" maxlength="256"/>
 
-						<input type="submit" value="Update"/>
+							<label for="confirm_password">Confirm password</label><input type="password" id="confirm_password" name="confirm_password" maxlength="256"/>
+
+							<input type="submit" value="Update"/>
+						</fieldset>
 					</form>
 				</main>
 

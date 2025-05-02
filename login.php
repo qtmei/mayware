@@ -86,13 +86,15 @@
 
 		<main>
 			<form method="POST">
-				Username
-				<input type="text" name="username" maxlength="16" required/>
+				<fieldset>
+					<legend>Login</legend>
 
-				Password
-				<input type="password" name="password" maxlength="256" required/>
+					<label for="username">Username</label><input type="text" id="username" name="username" maxlength="16" required/>
 
-				<input type="submit" value="Login"/>
+					<label for="password">Password</label><input type="password" id="password" name="password" maxlength="256" required/>
+
+					<input type="submit" value="Login"/>
+				</fieldset>
 			</form>
 		</main>
 
