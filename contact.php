@@ -53,13 +53,13 @@
 		<meta property="og:url" content="https://<? echo $domain2; ?>.net/contact.php"/>
 		<meta property="og:title" content="<? echo $domain; ?> - Contact us"/>
 		<meta property="og:description" content="Contact us for personalized software and web design with excellent optimization and security."/>
-		<meta property="og:image" content="https://<? echo $domain2; ?>.net/favicon-1080x1080.png"/>
+		<meta property="og:image" content="https://<? echo $domain2; ?>.net/logo.png"/>
 
 		<meta property="twitter:card" content="summary_large_image"/>
 		<meta property="twitter:url" content="https://<? echo $domain2; ?>.net/contact.php"/>
 		<meta property="twitter:title" content="<? echo $domain; ?> - Contact us"/>
 		<meta property="twitter:description" content="Contact us for personalized software and web design with excellent optimization and security."/>
-		<meta property="twitter:image" content="https://<? echo $domain2; ?>.net/favicon-1080x1080.png"/>
+		<meta property="twitter:image" content="https://<? echo $domain2; ?>.net/logo.png"/>
 
 		<meta charset="UTF-8"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -67,17 +67,14 @@
 		<meta name="robots" content="index, follow"/>
 		<meta name="language" content="English"/>
 
-		<link rel="icon" type="image/x-icon" href="favicon.ico"/>
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
-		<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196"/>
-		<link rel="icon" type="image/png" href="favicon-1080x1080.png" sizes="1080x1080"/>
+		<link rel="icon" href="favicon.ico"/>
 
 		<link rel="stylesheet" href="stylesheet.css"/>
 	</head>
 
 	<body>
 		<header>
-			<img src="favicon-1080x1080.png" alt=""/><h1><? echo $domain; ?><br/>Software Consulting</h1>
+			<img src="logo.png" alt=""/><h1><? echo $domain; ?><br/>Software Consulting</h1>
 		</header>
 
 		<nav>

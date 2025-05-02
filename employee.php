@@ -11,7 +11,7 @@
 	$sta->execute(array(':id' => $_GET["id"]));
 	$accountInfo = $sta->fetch();
 
-	$avatarURL = file_exists("photos/" . $accountInfo["id"] . ".png") ? "photos/" . $accountInfo["id"] . ".png" : "favicon-1080x1080.png";
+	$avatarURL = file_exists("photos/" . $accountInfo["id"] . ".png") ? "photos/" . $accountInfo["id"] . ".png" : "logo.png";
 
 	echo '
 		<!DOCTYPE html>
@@ -24,17 +24,14 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<meta name="language" content="English"/>
 
-				<link rel="icon" type="image/x-icon" href="favicon.ico"/>
-				<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
-				<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196"/>
-				<link rel="icon" type="image/png" href="favicon-1080x1080.png" sizes="1080x1080"/>
+				<link rel="icon" href="favicon.ico"/>
 
 				<link rel="stylesheet" href="stylesheet.css"/>
 			</head>
 
 			<body>
 				<header>
-					<img src="favicon-1080x1080.png" alt=""/><h1>' . $domain . '<br/>Software Consulting</h1>
+					<img src="logo.png" alt=""/><h1>' . $domain . '<br/>Software Consulting</h1>
 				</header>
 
 				<nav>
